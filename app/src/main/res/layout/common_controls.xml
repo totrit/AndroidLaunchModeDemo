@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.totrit.androidsimpletest.CommonControlsViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" />
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/activities"
+        android:layout_below="@id/display">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity1 - standard"
+            android:id="@+id/radio_act_1" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity2 - singleTop"
+            android:id="@+id/radio_act_2" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity3 - singleTask"
+            android:id="@+id/radio_act_3" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity4 - singleInstance"
+            android:id="@+id/radio_act_4" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/go"
+        android:layout_below="@id/activities"
+        android:text="StartActivity" />
+</com.totrit.androidsimpletest.CommonControlsViewGroup>
